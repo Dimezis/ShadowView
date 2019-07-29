@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <com.eightbitlab.shadowview.ShadowView
+        android:id="@+id/spaceShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shadowDx="0dp"
+        app:shadowDy="20dp"
+        app:shadowRadius="6dp">
+
+        <ImageView
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corners"
+            android:outlineProvider="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/space" />
+
+    </com.eightbitlab.shadowview.ShadowView>
+
+    <com.eightbitlab.shadowview.ShadowView
+        android:id="@+id/cosmonautShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:shadowDx="0dp"
+        app:shadowDy="20dp"
+        app:shadowRadius="6dp">
+
+        <ImageView
+            android:id="@+id/cosmonaut"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corners"
+            android:outlineProvider="background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cosmonaut" />
+
+    </com.eightbitlab.shadowview.ShadowView>
+</LinearLayout>
